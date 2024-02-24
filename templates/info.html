@@ -132,8 +132,8 @@ https://templatemo.com/tm-546-sixteen-clothing
               </div>
               {% if user.is_staff %}
               <div>
-                <a href=""><button class="btn btn-primary">Edit product</button></a>
-                <a href=""><button class="btn btn-danger">Delete product</button></a>
+                <a href="{% url 'edit-product' product.pk %}"><button class="btn btn-primary">Edit product</button></a>
+                <a href="{% url 'delete-product' product.pk %}"><button class="btn btn-danger">Delete product</button></a>
               </div>
               {% endif %}
             </div>
